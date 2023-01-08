@@ -1,0 +1,9 @@
+ja:
+  enums:
+    task:
+      status:
+        untouched: '未着手'
+        launch: '着手中'
+        done: '完了'
+        pending: '保留'
+        withdraw: '取り下げ'

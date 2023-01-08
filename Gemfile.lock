@@ -98,6 +98,8 @@ GEM
       reline (>= 0.3.1)
     diff-lcs (1.5.0)
     e2mmap (0.1.0)
+    enum_help (0.0.19)
+      activesupport (>= 3.0.0)
     erb_lint (0.3.1)
       activesupport
       better_html (>= 2.0.1)
@@ -278,6 +280,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  enum_help
   erb_lint
   hotwire-livereload (~> 1.2)
   importmap-rails
