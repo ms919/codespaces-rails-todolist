@@ -1,0 +1,23 @@
+<div>
+  <h2>TODOリスト</h2>
+  <%= link_to '作成', new_task_path %>
+
+  <table align="center" border='1'>
+    <thead>
+      <th>title</th>
+      <th>detail</th>
+      <th>status</th>
+      <th>edit</th>
+      <th>delete</th>
+    </thead>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.title %></td>
+        <td><%= task.detail %></td>
+        <td><%= task.status %></td>
+        <td><%= link_to '編集', edit_task_path(task) %></td>
+        <td><%= link_to '削除', task_path(task), data: { turbo_method: :delete } %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
